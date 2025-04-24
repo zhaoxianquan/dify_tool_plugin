@@ -1,0 +1,50 @@
+version: 1.0.1
+type: plugin
+author: zhaoxianquan
+name: unzip_file
+label:
+  en_US: unzip_file
+  ja_JP: unzip_file
+  zh_Hans: unzip_file
+  pt_BR: unzip_file
+description:
+  en_US: 解析zip返回文件集
+  ja_JP: 解析zip返回文件集
+  zh_Hans: 解析zip返回文件集
+  pt_BR: 解析zip返回文件集
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: true
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/unzip_file.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-04-21T11:02:59.8942534+08:00
+privacy: PRIVACY.md
+verified: false

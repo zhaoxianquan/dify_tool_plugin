@@ -1,0 +1,36 @@
+identity:
+  name: unzip_file
+  author: zhaoxianquan
+  label:
+    en_US: unzip_file
+    zh_Hans: unzip_file
+    pt_BR: unzip_file
+description:
+  human:
+    en_US: 解析zip返回文件集
+    zh_Hans: 解析zip返回文件集
+    pt_BR: 解析zip返回文件集
+  llm: 解析zip返回文件集
+parameters:
+  - name: file
+    type: file
+    required: true
+    label:
+      en_US: zip file
+      zh_Hans: zip 文件
+      pt_BR: zip file
+    human_description:
+      en_US: 解析zip返回文件集
+      zh_Hans: 解析zip返回文件集
+      pt_BR: 解析zip返回文件集
+    llm_description: 解析zip返回文件集
+    form: llm
+output_schema:
+  type: object
+  properties:
+    file_list:
+      type: files
+
+extra:
+  python:
+    source: tools/unzip_file.py

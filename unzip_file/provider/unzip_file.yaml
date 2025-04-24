@@ -1,0 +1,17 @@
+identity:
+  author: zhaoxianquan
+  name: unzip_file
+  label:
+    en_US: unzip_file
+    zh_Hans: unzip_file
+    pt_BR: unzip_file
+  description:
+    en_US: 解析zip返回文件集
+    zh_Hans: 解析zip返回文件集
+    pt_BR: 解析zip返回文件集
+  icon: icon.svg
+tools:
+  - tools/unzip_file.yaml
+extra:
+  python:
+    source: provider/unzip_file.py
